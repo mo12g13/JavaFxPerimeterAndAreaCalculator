@@ -10,7 +10,7 @@ public class PeimeterandAreaManager extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/PerimeterandAreaCalculator/myFXML.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/PerimeterandAreaCalculator/perimeterAndArea.fxml"));
         root.getStylesheets().add(getClass().getResource("AreaAndPerimeter.css").toExternalForm());
 
         Scene scene = new Scene(root);
