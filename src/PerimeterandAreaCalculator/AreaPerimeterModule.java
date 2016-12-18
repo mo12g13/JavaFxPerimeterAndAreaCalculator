@@ -10,7 +10,7 @@ import javafx.scene.control.TextField;
 public class AreaPerimeterModule {
 
 
-
+//A method that checks to make sure the textField isn't empty
    public boolean isPresent(TextField textField, String name){
         if(textField.getText().equals("")){
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -28,19 +28,11 @@ public class AreaPerimeterModule {
         }
 
     }
-    public  boolean isCheckBoxSelected(CheckBox checkBox, String name)
-    {
 
-        if(checkBox.isSelected())
-        {
 
-            return  true;
-        }
-        else {
-            return false;
-        }
-    }
-    public boolean isValidData(TextField textField, String name){
+     // A method that checks to make sure value can be converted to double.
+    //If the input can't be converted to double, the is ask not to enter string.
+    public boolean isDouble(TextField textField, String name){
         try {
             if (Double.parseDouble(textField.getText()) > 0) {
                 return true;
